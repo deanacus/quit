@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   background: rgb(37,37,37);
   color: rgb(214,214,214);
-   }
+  height: 100%; }
 
 article {
   width: 48%;
@@ -68,7 +68,7 @@ footer {
 }
 
 footer {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 a:link, a:visited {
@@ -90,4 +90,17 @@ a:active, a:hover {
     clear: both;
     max-width: 520px;
   }
+}
+
+@media screen and (min-width: 521px) {
+  
+  section {
+    width: 640px;
+    height: 260px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
 }
