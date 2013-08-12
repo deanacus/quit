@@ -4,6 +4,8 @@
 /* Import base styles */
 @import url('mathematical.css');
 
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
 
 body {
   font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -42,7 +44,7 @@ article {
 
   article p {
     margin: 0;
-    font-weight: 200;
+    font-weight: 300;
     font-size: .875rem;
   }
   
@@ -59,9 +61,10 @@ header {
 footer {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin: 1%;
   text-align: center;
-  width: 640px;
 }
 
 footer {
@@ -81,4 +84,10 @@ a:active, a:hover {
   article {
     width: 96%;
     margin: 1% 2%; }
+  
+  footer {
+    position: static;
+    clear: both;
+    max-width: 520px;
+  }
 }
