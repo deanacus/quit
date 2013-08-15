@@ -1,0 +1,106 @@
+/* Import reset */
+@import url('normalize.css');
+
+/* Import base styles */
+@import url('mathematical.css');
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+
+body {
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgb(37,37,37);
+  color: rgb(214,214,214);
+  height: 100%; }
+
+article {
+  width: 48%;
+  margin: 1%;
+  float: left;
+  text-shadow: 2px 1px rgba(0,0,0,.15);
+  box-sizing: border-box;
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+  #timeSinceBox {
+    background: rgb(68,177,235);
+  }
+
+  #cigsBox {
+    background: rgb(215,99,113);
+  }
+  
+  #dollarsBox {
+    background: rgb(226,127,80);
+  }
+  
+  #timeSavedBox{
+    background: rgb(137,119,178);
+  }
+
+  article p {
+    margin: 0;
+    font-weight: 300;
+    font-size: .875rem;
+  }
+  
+  article .value {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+header {
+  margin: 0 1%;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 1%;
+  text-align: center;
+}
+
+footer {
+  font-weight: 300;
+}
+
+a:link, a:visited {
+  color: rgb(215,99,113);
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 520px) {
+  article {
+    width: 96%;
+    margin: 1% 2%; }
+  
+  footer {
+    position: static;
+    clear: both;
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width: 521px) {
+  
+  section {
+    width: 640px;
+    height: 260px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+}
