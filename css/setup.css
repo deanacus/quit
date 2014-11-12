@@ -1,0 +1,30 @@
+/*---
+Initial Setup
+---*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, button, input, select, textarea {
+  color:#222; }
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5; }
+
+::selection {
+  background-color:#5bc0de;
+  color:#fff;
+  text-shadow:none }
+
+::-moz-selection {
+  background-color:#5bc0de;
+  color:#fff;
+  text-shadow:none }
+
+.container img {
+  width: 100%;
+  height: auto; }

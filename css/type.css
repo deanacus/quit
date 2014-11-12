@@ -1,0 +1,106 @@
+/*---
+TYPE
+---*/
+
+  /*---
+    HEADINGS
+  ---*/
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; }
+  
+  h1 {
+    font-size:2em;
+    margin:0 0 1.5rem; }
+  
+  h2 {
+    font-size:1.5em;
+    margin:0 0 0.83em; }
+  
+  h3 {
+    font-size:1.17em;
+    margin:0 0 1em; }
+  
+  h4 {
+    font-size:1em;
+    margin:0 0 1.33em; }
+  
+  h5 {
+    font-size:.83em;
+    margin:0 0 1.67em; }
+  
+  h6 {
+    font-size:.67em;
+    margin:0 0 2.33em; }
+
+  /*---
+    LISTS
+  ---*/
+  
+  ul,ol {
+    list-style-position: inside;
+    padding: 0; }
+  
+  li ul,li ol {
+    margin: 0 1.5em; }
+  
+  dl dd {
+    margin-left: 1.5em; }
+  
+  dl dt {
+    font-weight: bold; }
+
+  /*---
+  LINKS
+  ---*/
+  
+  a:link, a:visited {
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    transition:all 0.3s;
+    text-decoration: none;
+    color: rgb(91, 192, 222); }
+  
+  a:focus {
+    outline:0; }
+  
+  a:active, a:hover {
+    outline:0;
+    color: #222; }
+  
+  /*---
+  TABLES
+  ---*/
+  
+  table {
+    width: 100%;
+    margin: 1em 0; }
+
+  thead th, thead td {
+    text-align: left;
+    padding: 0 1em; }
+    
+  tr, thead {
+    border-bottom: 2px solid #eee; }
+
+  table tr td:first-child {
+    border-left: none; }
+
+  table td {
+    border: 2px solid #EEE;
+    padding: .75em 1em; }
+  
+  table tr td:last-child {
+    border-right: none; }
+  
+  table.striped tr:nth-child(even) {
+    background: #F4F4F4; }
+  
+  /*---
+  CODE
+  ---*/
+  
+  code, pre {
+    color: #666;
+    font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+  }

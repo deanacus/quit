@@ -1,0 +1,118 @@
+/*----
+Mobile First Styles
+----*/
+
+@import url("http://fonts.googleapis.com/css?family=Exo");
+@import url("http://fonts.googleapis.com/css?family=Unica+One");
+
+/*---
+  LAYOUT
+---*/
+
+body {
+  max-width: 22.5em;
+  margin: 2em auto;
+  text-align: center;
+  font-family: "Exo", "PT Sans", Helvetica, sans-serif;
+  color: #73797d;
+  -webkit-animation: pop .5s 1 ease-in;
+  -moz-animation: pop .5s 1 ease-in;
+  -o-animation: pop .5s 1 ease-in;
+  animation: pop .5s 1 ease-in;
+}
+
+header {
+  border-bottom: 1px solid #eee;
+  padding: 1.5em 0;
+}
+
+section {
+  overflow: hidden;
+  padding-top: 1.5em;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  padding-top: 1.5em;
+}
+
+hr {
+  border-bottom: 1px solid #eee;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+  h1 {
+  font-size: 4em;
+    font-family: "Unica One", "Exo", "PT Sans", Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  header p {
+    margin-top: 0;
+  }
+
+article {
+  margin: 0 0 1.5em;
+  text-shadow: 2px 1px rgba(0,0,0,.15);
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+  #timeSinceBox {
+    background: rgb(68,177,235);
+  }
+
+  #cigsBox {
+    background: rgb(215,99,113);
+  }
+
+  #dollarsBox {
+    background: rgb(226,127,80);
+  }
+
+  #timeSavedBox{
+    background: rgb(137,119,178);
+  }
+
+  article .value {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: "Unica One", "Exo", "PT Sans", Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  article p {
+    margin: 0;
+  }
+
+/*----
+Mobile to Tablet
+----*/
+
+@media screen and (min-width:481px) {
+
+  body {
+    max-width: 45em;
+  }
+
+  article {
+    width: 48%;
+    float: left;
+    margin: 0 1% 1.5em;
+  }
+}
+
+/*----
+Desktop and above
+----*/
+
+@media screen and (min-width:992px) {
+  
+}
