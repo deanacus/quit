@@ -1,11 +1,14 @@
 function daysCalc(minutes) {
   var mins = Math.floor((minutes % 1440) % 60);
   var hours = Math.floor((minutes / 60) % 24);
-  var days = Math.floor(((minutes / 60) / 24));
+  var days = Math.floor((minutes / 60) / 24);
+  var years = Math.floor(days / 365);
+  var days = Math.floor(days % 365);
   return {
     "mins": mins,
     "hours": hours,
-    "days": days
+    "days": days,
+    "years": years
   }
 }
 
@@ -30,7 +33,7 @@ var dollars = cigs * 0.8;
 // Calculate the amount of time saved based on 6 minutes a cigarette
 var timeSaved = daysCalc(cigs * 6);
 
-document.getElementById('time').innerHTML = timeQuit.days + "d " + timeQuit.hours + "h " + timeQuit.mins + "m";
+document.getElementById('time').innerHTML = timeQuit.years + "y " + timeQuit.days + "d " + timeQuit.hours + "h " + timeQuit.mins + "m";
 document.getElementById('cigs').innerHTML = cigs;
 document.getElementById('dollars').innerHTML = "$" + dollars.toFixed(2);
 document.getElementById('timesaved').innerHTML = timeSaved.days + "d " + timeSaved.hours + "h " + timeSaved.mins + "m";
